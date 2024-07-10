@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./src/styles/simple-adaptive-slider.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/scripts/scripts.js" defer></script>
+    <script type="module" src="./src/scripts/gsap-scripts.js" defer></script>
+  </head>
+  <body class="page bg-violet-100 font-serif relative">
+    <header class="flex gap-36 justify-around place-items-center py-10 h-80">
+      <svg
+        class="icon w-20 h-20 dark:text-purple-100 transition-colors duration-2s"
+        viewBox="0 0 3978 4165"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M987.245 1967.03H2989.27V2883.97C2989.27 3377.13 2752.73 3854.44 2262.31 3906.46C2180.72 3915.11 2091.75 3920.14 1995.13 3920.14C1902.79 3920.14
+       1817.18 3915.55 1738.15 3907.58C1234.39 3856.83 987.245 3367.44 987.245 2861.13V1967.03Z"
+          fill="currentColor"
+        />
+        <path
+          d="M1989.04 419.384C1989.04 419.384 2511.41 408.149 2811.17 904.759C3042.57 1288.13 2988.52 1886.57 2988.52 1886.57H1989.04V419.384Z"
+          fill="currentColor"
+        />
+        <path
+          d="M1927.52 419.546C1927.52 419.546 1434.51 368.879 1118.98 847.693C975.758 1065.03 984.091 1583.66 984.091 1583.66H1927.52V419.546Z"
+          fill="currentColor"
+        />
+      </svg>
+
+      <div class="header__nav flex place-items-center gap-6">
+        <nav class="header__links-list list-none flex gap-6">
+          <a
+            href="#about"
+            class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+            >About
+            <span class="custom-underline-animation"></span>
+          </a>
+          <a
+            href="#project"
+            class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+            >Project
+            <span class="custom-underline-animation"></span>
+          </a>
+          <a
+            href="#contacts"
+            class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+            >Contacts
+            <span class="custom-underline-animation"></span>
+          </a>
+        </nav>
+        <button
+          class="theme-btn bg-black-800 rounded-full p-1 ml-1 relative duration-500 hover:scale-125"
+        >
+          <img
+            src="./src/images/moon-black.svg"
+            alt="Луна"
+            class="moon w-8 h-8"
+          />
+          <img
+            src="./src/images/sun.svg"
+            class="sun w-8 h-8 opacity-0 absolute top-40vh right-0"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="about"
+        class="about flex justify-center place-items-center h-80 mt-10 mb-56"
+      >
+        <p
+          class="about-text font-bold text-7xl max-w-2xl leading-tight m-11p transition-colors duration-2s dark:text-purple-100"
+        >
+          Hi, I'm Mike, A Junior Full Stack Developer.
+        </p>
+        <p class="text-5xl transition-colors duration-2 dark:text-purple-100">
+          I like animations and dark themes, and also learning, creating, coding
+        </p>
+      </section>
+
+      <section id="project" class="project-section">
+        <!-- проект бургера -->
+
+        <div class="project flex justify-center gap-20 mb-48">
+          <div class="flex">
+            <div class="flex flex-col justify-between w-full">
+              <div>
+                <h3
+                  class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                >
+                  Stellar-burger
+                </h3>
+                <p
+                  class="dark:text-purple-100 text-xl max-w-96 mb-3 transition-colors duration-2s"
+                >
+                  Classic student work. With the interactive constructor, simply
+                  grab and drag ingredients to create the burger of your dream.
+                  After this, you will receive an order number and you can pick
+                  it up at the nearest space station. The order feed is updating
+                  in real time. And your personal account guarantees that not a
+                  single alien will know the order number except you.
+                </p>
+                <div class="flex flex-col">
+                  <a
+                    href="https://github.com/Mishe4ka14/react-stellar-burger"
+                    class="header__link w-[64px] relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                    target="_blank"
+                    >GitHub
+                    <span class="custom-underline-animation"></span>
+                  </a>
+                  <a
+                    href="https://mishe4ka14.github.io/react-stellar-burger/"
+                    class="header__link w-9 relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                    target="_blank"
+                    >Site
+                    <span class="custom-underline-animation"></span>
+                  </a>
+                </div>
+              </div>
+              <ul class="flex gap-3">
+                <li>
+                  <img
+                    src="./src/images/tech-icons/html5-plain.svg"
+                    title="html5"
+                    alt="html5"
+                    width="60"
+                    height="60"
+                    class="reveal"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/css3-plain.svg"
+                    title="css3"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="reveal"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/react-original.svg"
+                    title="react"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="reveal"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/redux-original.svg"
+                    title="redux"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="reveal"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/typescript-plain.svg"
+                    title="typescript"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="reveal"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/reactrouter-original.svg"
+                    title="react-router"
+                    alt="react-router"
+                    width="60"
+                    height="60"
+                    class="reveal"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="itcss" id="slider-burger">
+            <div class="itcss__wrapper rounded-xl">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/burger-screens/registration.png"
+                    alt="Страница регистрации"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/burger-screens/main-page.png"
+                    alt="Главная страница"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/burger-screens/orders-feed.png"
+                    alt="Лента  заказов"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/burger-screens/profile.png"
+                    alt="Личный кабинет"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="itcss__btn itcss__btn_prev"
+              role="button"
+              data-slide="prev"
+            ></button>
+            <button
+              class="itcss__btn itcss__btn_next"
+              role="button"
+              data-slide="next"
+            ></button>
+          </div>
+        </div>
+
+        <!-- пет проект мессенджера -->
+
+        <div class="project flex justify-center gap-20 mb-48">
+          <div class="itcss" id="slider-pet">
+            <div class="itcss__wrapper rounded-xl">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/messenger-screens/start-page.png"
+                    alt="Страница регистрации"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/messenger-screens/chat.png"
+                    alt="Главная страница"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/messenger-screens/profile.png"
+                    alt="Лента  заказов"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="itcss__btn itcss__btn_prev"
+              role="button"
+              data-slide="prev"
+            ></button>
+            <button
+              class="itcss__btn itcss__btn_next"
+              role="button"
+              data-slide="next"
+            ></button>
+          </div>
+          <div class="flex justify-center gap-20 mb-4">
+            <div class="flex">
+              <div class="flex flex-col justify-between w-full">
+                <div>
+                  <h3
+                    class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                  >
+                    Pet-project Hedwig
+                  </h3>
+                  <p
+                    class="dark:text-purple-100 text-xl max-w-96 mb-3 transition-colors duration-2s"
+                  >
+                    Pet-project of a simple messenger. Here you can find a
+                    friend and chat with him (the only condition is to tell him
+                    about Hedwig and ask to register). Then websocket technology
+                    will download your messages even without reloading the page.
+                    When registering, you will have an avatar of a cute elf, but
+                    at any time you can change it in your profile. In general,
+                    almost like telegram, only a little simpler =). <br />
+                    The project is actively being developed and new features are
+                    planned to be added.
+                  </p>
+                  <div class="flex flex-col">
+                    <a
+                      href="https://github.com/Mishe4ka14/pet-messenger"
+                      class="header__link w-[64px] relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                      target="_blank"
+                      >GitHub
+                      <span class="custom-underline-animation"></span>
+                    </a>
+                    <a
+                      href="https://mishe4ka14.github.io/react-stellar-burger/"
+                      class="header__link w-9 relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                      target="_blank"
+                      >Site
+                      <span class="custom-underline-animation"></span>
+                    </a>
+                  </div>
+                </div>
+
+                <ul class="flex gap-3">
+                  <li>
+                    <img
+                      src="./src/images/tech-icons/html5-plain.svg"
+                      title="html5"
+                      alt="html5"
+                      width="60"
+                      height="60"
+                      class="pet-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./src/images/tech-icons/sass-original.svg"
+                      title="css3"
+                      alt="css3"
+                      width="60"
+                      height="60"
+                      class="pet-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./src/images/tech-icons/react-original.svg"
+                      title="react"
+                      alt="react"
+                      width="60"
+                      height="50"
+                      class="pet-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./src/images/tech-icons/redux-original.svg"
+                      title="redux"
+                      alt="redix"
+                      width="60"
+                      height="60"
+                      class="pet-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./src/images/tech-icons/typescript-plain.svg"
+                      title="typescript"
+                      alt="typescript"
+                      width="60"
+                      height="60"
+                      class="pet-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./src/images/tech-icons/mongodb-original.svg"
+                      title="mongo"
+                      alt="mongodb"
+                      width="60"
+                      height="60"
+                      class="pet-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./src/images/tech-icons/express-original-wordmark.svg"
+                      title="express"
+                      alt="css3"
+                      width="60"
+                      height="60"
+                      class="pet-icon"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- проект mesto -->
+
+        <div class="project flex justify-center gap-20 mb-48">
+          <div class="flex">
+            <div class="flex flex-col justify-between w-full">
+              <div>
+                <h3
+                  class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                >
+                  Mesto
+                </h3>
+                <p
+                  class="dark:text-purple-100 text-xl max-w-96 mb-3 transition-colors duration-2s"
+                >
+                  First layout work using flex and grid. An interactive page
+                  with the ability to add picture cards. Each card can be liked
+                  and if a picture card belongs to you, you can delete it. You
+                  can also change your profile data and avatar. The project is
+                  uploaded to the server using Docker
+                </p>
+                <div class="flex flex-col">
+                  <a
+                    href="https://github.com/Mishe4ka14/mesto-OOP"
+                    class="header__link w-[64px] relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                    target="_blank"
+                    >GitHub
+                    <span class="custom-underline-animation"></span>
+                  </a>
+                  <a
+                    href="https://mishe4ka14.github.io/mesto-OOP"
+                    class="header__link w-9 relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                    target="_blank"
+                    >Site
+                    <span class="custom-underline-animation"></span>
+                  </a>
+                </div>
+              </div>
+              <ul class="flex gap-3">
+                <li>
+                  <img
+                    src="./src/images/tech-icons/html5-plain.svg"
+                    title="html5"
+                    alt="html5"
+                    width="60"
+                    height="60"
+                    class="mesto-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/css3-plain.svg"
+                    title="css3"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="mesto-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/javascript-plain.svg"
+                    title="javascript"
+                    alt="javascript"
+                    width="60"
+                    height="60"
+                    class="mesto-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/webpack-plain.svg"
+                    title="webpack"
+                    alt="webpack"
+                    width="60"
+                    height="50"
+                    class="mesto-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/git-plain.svg"
+                    title="git"
+                    alt="git"
+                    width="60"
+                    height="60"
+                    class="mesto-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/docker-plain.svg"
+                    title="docker"
+                    alt="docker"
+                    width="60"
+                    height="60"
+                    class="mesto-icon"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="itcss" id="slider-burger">
+            <div class="itcss__wrapper rounded-xl">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/mesto-screens/main-page.png"
+                    alt="Страница регистрации"
+                    class="object-cover w-full max-h-[58vh]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="flex justify-around pb-20 gap-96">
+          <div class="flex gap-10">
+            <p
+              class="font-thin text-xl dark:text-purple-100 transition-colors duration-2s"
+            >
+              Designed and Built by Mishe4ka14
+            </p>
+            <p
+              class="font-thin text-xl dark:text-purple-100 transition-colors duration-2s"
+            >
+              2024
+            </p>
+          </div>
+          <div class="flex gap-5">
+            <a
+              href="https://github.com/Mishe4ka14"
+              class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+              target="_blank"
+              >GitHub
+              <span class="custom-underline-animation"></span>
+            </a>
+            <a
+              href="https://t.me/chilovar"
+              class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+              target="_blank"
+              >Telegram
+              <span class="custom-underline-animation"></span>
+            </a>
+            <a
+              href="mailto:mikhail.semenov98@yandex.ru"
+              class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+              target="_blank"
+              >Email
+              <span class="custom-underline-animation"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

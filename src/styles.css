@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  color: #192230;
+}
+
+a {
+  color: #1e2a3e;
+}
+
+h3 {
+  color: #1e2a3e;
+}
+/****************************ANIMATION**************************/
+
+/*************WIGGLE***********/
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+/*************MOON ANIMATION***********/
+.moon {
+  transition: transform 2s cubic-bezier(0.42, 0, 0.58, 1),
+    opacity 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes moonset {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(0) translateY(7vh);
+    opacity: 0.9;
+  }
+  30% {
+    transform: translateX(0) translateY(13vh);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(0) translateY(19vh);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(0) translateY(22vh);
+    opacity: 0.4;
+  }
+  90% {
+    transform: translateX(0) translateY(28vh);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0) translateY(33vh);
+    opacity: 0;
+  }
+}
+
+.moon.moonset {
+  animation: moonset 1.5s cubic-bezier(1, 1, 1, 1) forwards;
+}
+
+@keyframes moonrise {
+  0% {
+    transform: translateX(0) translateY(33vh);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0) translateY(28vh);
+    opacity: 0.2;
+  }
+  30% {
+    transform: translateX(0) translateY(22vh);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(0) translateY(19vh);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(0) translateY(13vh);
+    opacity: 0.7;
+  }
+  90% {
+    transform: translateX(0) translateY(7vh);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.moon.moonrise {
+  animation: moonrise 1.5s cubic-bezier(1, 1, 1, 1) forwards;
+}
+
+/************* SUN ANIMATION***********/
+
+.sun {
+  transition: transform 2s cubic-bezier(0.42, 0, 0.58, 1),
+    opacity 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes sunrise {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0) translateY(-11vh);
+    opacity: 0.2;
+  }
+  30% {
+    transform: translateX(0) translateY(-17vh);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(0) translateY(-21vh);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(0) translateY(-27vh);
+    opacity: 0.7;
+  }
+  90% {
+    transform: translateX(0) translateY(-30vh);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0) translateY(-35vh);
+    opacity: 1;
+  }
+}
+
+.sun.sunrise {
+  animation: sunrise 1.5s cubic-bezier(1, 1, 1, 1) forwards;
+}
+
+@keyframes sunset {
+  0% {
+    transform: translateX(0) translateY(-35vh);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(0) translateY(-30vh);
+    opacity: 0.9;
+  }
+  30% {
+    transform: translateX(0) translateY(-27vh);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(0) translateY(-21vh);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(0) translateY(-17vh);
+    opacity: 0.4;
+  }
+  90% {
+    transform: translateX(0) translateY(-11vh);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+}
+
+.sun.sunset {
+  animation: sunset 1.5s cubic-bezier(1, 1, 1, 1) forwards;
+}
+
+/*************PAGE DARK THEME ANIMATION***********/
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e293b;
+  clip-path: circle(0% at top left);
+  transition: clip-path 2s ease-in-out;
+  z-index: -1;
+}
+
+.page.dark::before {
+  clip-path: circle(150% at top left);
+}
+
+/*************LOGO DARK THEME ANIMATION***********/
