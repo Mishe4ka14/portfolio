@@ -81,7 +81,7 @@
         >
           Hi, I'm Mike, a Junior Full Stack Developer.
         </p>
-        <p class="text-5xl transition-colors duration-2 dark:text-purple-100">
+        <p class="text-5xl transition-colors duration-2s dark:text-purple-100">
           I like animation and dark themes, and also learning, creating, coding
         </p>
       </section>
@@ -392,9 +392,172 @@
           </div>
         </div>
 
+        <!-- проект купи-подари -->
+
+        <div class="project flex justify-center gap-20 mb-48">
+          <div class="flex">
+            <div class="flex flex-col justify-between w-full">
+              <div>
+                <h3
+                  class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                >
+                  Kupi-podari
+                </h3>
+                <p
+                  class="dark:text-purple-100 text-xl max-w-96 mb-3 transition-colors duration-2s"
+                >
+                  Wishlist service. After registration, you can create your own
+                  gift selections. Do you want a new gadget, fashionable
+                  clothes, or just a book? Easily! Add any gifts to the list,
+                  indicating their price and the store where you can buy them.
+                  This will help your friends understand what exactly you need
+                  and where you can buy it. Your friends can view your wishlist
+                  and choose which ones to donate to. <br />
+                  The project is uploaded to the server using Docker.
+                </p>
+                <div class="flex flex-col">
+                  <a
+                    href="https://github.com/Mishe4ka14/web-plus-docker-and-compose"
+                    class="header__link w-[64px] relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                    target="_blank"
+                    >GitHub
+                    <span class="custom-underline-animation"></span>
+                  </a>
+                  <a
+                    href="https://wish-mish.nomoredomainswork.ru"
+                    class="header__link w-9 relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+                    target="_blank"
+                    >Site
+                    <span class="custom-underline-animation"></span>
+                  </a>
+                </div>
+              </div>
+              <ul class="flex gap-3">
+                <li>
+                  <img
+                    src="./src/images/tech-icons/javascript-plain.svg"
+                    title="html5"
+                    alt="html5"
+                    width="60"
+                    height="60"
+                    class="kupi-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/css3-plain.svg"
+                    title="css3"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="kupi-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/react-original.svg"
+                    title="react"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="kupi-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/docker-plain.svg"
+                    title="redux"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="kupi-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/typescript-plain.svg"
+                    title="typescript"
+                    alt="css3"
+                    width="60"
+                    height="60"
+                    class="kupi-icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./src/images/tech-icons/nestjs-original.svg"
+                    title="react-router"
+                    alt="react-router"
+                    width="60"
+                    height="60"
+                    class="kupi-icon"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="itcss" id="slider-kupi-podari">
+            <div class="itcss__wrapper rounded-xl">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/kupi-podari/main-page.png"
+                    alt="Главная страница"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/kupi-podari/gift.png"
+                    alt="Карточка подарка"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/kupi-podari/add-gift.png"
+                    alt="Добавление подарка"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/kupi-podari/registration.png"
+                    alt="Страница регистрации"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="itcss__btn itcss__btn_prev"
+              role="button"
+              data-slide="prev"
+            ></button>
+            <button
+              class="itcss__btn itcss__btn_next"
+              role="button"
+              data-slide="next"
+            ></button>
+          </div>
+        </div>
+
         <!-- проект mesto -->
 
         <div class="project flex justify-center gap-20 mb-48">
+          <div class="itcss" id="slider-burger">
+            <div class="itcss__wrapper rounded-xl">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <img
+                    src="./src/images/mesto-screens/main-page.png"
+                    alt="Страница регистрации"
+                    class="object-cover w-full max-h-[58vh]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="flex">
             <div class="flex flex-col justify-between w-full">
               <div>
@@ -409,8 +572,8 @@
                   First layout work using flex and grid. An interactive page
                   with the ability to add picture cards. Each card can be liked
                   and if a picture card belongs to you, you can delete it. You
-                  can also change your profile data and avatar. The project is
-                  uploaded to the server using Docker.
+                  can also change your profile data and avatar. <br />
+                  The project is uploaded to the server using Docker.
                 </p>
                 <div class="flex flex-col">
                   <a
@@ -491,19 +654,6 @@
                   />
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="itcss" id="slider-burger">
-            <div class="itcss__wrapper rounded-xl">
-              <div class="itcss__items">
-                <div class="itcss__item">
-                  <img
-                    src="./src/images/mesto-screens/main-page.png"
-                    alt="Страница регистрации"
-                    class="object-cover w-full max-h-[58vh]"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>

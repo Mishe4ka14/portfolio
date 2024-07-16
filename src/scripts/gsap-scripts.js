@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   animateElements(".reveal");
   animateElements(".pet-icon");
+  animateElements(".kupi-icon");
 });
