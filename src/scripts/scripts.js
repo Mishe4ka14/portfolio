@@ -4,6 +4,7 @@ const themeBtn = document.querySelector(".theme-btn");
 const page = document.querySelector(".page");
 const moon = page.querySelector(".moon");
 const sun = page.querySelector(".sun");
+const html = document.querySelector("html");
 
 themeBtn.addEventListener("click", () => {
   if (page.classList.contains("dark")) {
@@ -18,6 +19,7 @@ themeBtn.addEventListener("click", () => {
     sun.classList.add("sunrise");
   }
 
+  html.classList.toggle("dark");
   page.classList.toggle("dark");
 });
 
@@ -33,6 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Инициализация всех слайдеров
-  const sliders = ["#slider-burger", "#slider-pet", "#slider-kupi-podari"];
+  const sliders = [
+    "#slider-burger",
+    "#slider-pet",
+    "#slider-kupi-podari",
+    "#slider-mesto",
+  ];
   sliders.forEach(initializeSlider);
 });

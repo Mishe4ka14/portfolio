@@ -12,6 +12,12 @@
   margin-left: auto; */
 }
 
+@media (max-width: 1023px) {
+  .itcss {
+    max-width: 80%;
+  }
+}
+
 /* стили для wrapper */
 .itcss__wrapper {
   position: relative;

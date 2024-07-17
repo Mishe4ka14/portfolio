@@ -13,6 +13,7 @@ a {
 h3 {
   color: #1e2a3e;
 }
+
 /****************************ANIMATION**************************/
 
 /*************WIGGLE***********/
@@ -185,7 +186,14 @@ h3 {
 
 /*************PAGE DARK THEME ANIMATION***********/
 
-.page::before {
+.page {
+  max-width: 1440px;
+  margin: auto;
+  /* padding: 0 300px 0 300px; */
+  box-sizing: border-box;
+}
+
+.html::before {
   content: "";
   position: absolute;
   top: 0;
@@ -198,8 +206,18 @@ h3 {
   z-index: -1;
 }
 
-.page.dark::before {
+.html.dark::before {
   clip-path: circle(150% at top left);
 }
 
-/*************LOGO DARK THEME ANIMATION***********/
+.tech_icon {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .tech_icon {
+    width: 40px;
+    height: 40px;
+  }
+}
