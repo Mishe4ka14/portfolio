@@ -13,10 +13,10 @@
   </head>
   <body class="page bg-violet-100 font-serif relative">
     <header
-      class="flex gap-0 md:gap-36 justify-around place-items-center lg:py-10 h-40 lg:h-80"
+      class="flex gap-0 md:gap-36 justify-around place-items-center lg:py-10 h-20 sm:h-40 lg:h-80"
     >
       <svg
-        class="icon w-20 h-20 dark:text-purple-100 transition-colors duration-2s"
+        class="icon w-10 h-10 sm:w-20 sm:h-20 dark:text-purple-100 transition-colors duration-2s"
         viewBox="0 0 3978 4165"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -36,23 +36,23 @@
         />
       </svg>
 
-      <div class="header__nav flex place-items-center gap-6">
-        <nav class="header__links-list list-none flex gap-6">
+      <div class="header__nav flex place-items-center sm:gap-6">
+        <nav class="header__links-list list-none flex gap-3 sm:gap-6">
           <a
             href="#about"
-            class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+            class="header__link relative group dark:text-purple-100 font-thin text-base sm:text-xl transition-colors duration-2s"
             >About
             <span class="custom-underline-animation"></span>
           </a>
           <a
             href="#project"
-            class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+            class="header__link relative group dark:text-purple-100 font-thin text-base sm:text-xl transition-colors duration-2s"
             >Project
             <span class="custom-underline-animation"></span>
           </a>
           <a
             href="#contacts"
-            class="header__link relative group dark:text-purple-100 font-thin text-xl transition-colors duration-2s"
+            class="header__link relative group dark:text-purple-100 font-thin text-base sm:text-xl transition-colors duration-2s"
             >Contacts
             <span class="custom-underline-animation"></span>
           </a>
@@ -63,11 +63,11 @@
           <img
             src="./src/images/moon-black.svg"
             alt="Луна"
-            class="moon w-8 h-8"
+            class="moon w-4 h-4 object-cover sm:w-8 sm:h-8"
           />
           <img
             src="./src/images/sun.svg"
-            class="sun w-8 h-8 opacity-0 absolute top-40vh right-0"
+            class="sun w-4 h-4 sm:w-8 sm:h-8 opacity-0 absolute top-40vh right-0"
           />
         </button>
       </div>
@@ -76,7 +76,7 @@
     <main>
       <section
         id="about"
-        class="about flex justify-center place-items-center h-80 mt-10 mb-16 lg:mb-56"
+        class="about flex flex-col sm:flex sm:flex-row justify-center place-items-center h-80 sm:mt-10 sm:mb-16 lg:mb-56"
       >
         <p
           class="about-text font-bold xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl max-w-2xl leading-tight m-11p transition-colors duration-2s dark:text-purple-100"
@@ -84,7 +84,7 @@
           Hi, I'm Mike, a Junior Full Stack Developer.
         </p>
         <p
-          class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl mr-[3vw] transition-colors duration-2s dark:text-purple-100"
+          class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl ml-6 sm:ml-0 mr-[3vw] transition-colors duration-2s dark:text-purple-100"
         >
           I like animation and dark themes, and also learning, creating, coding
         </p>
@@ -102,12 +102,12 @@
             >
               <div>
                 <h3
-                  class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                  class="font-bold dark:text-purple-100 text-xl sm:text-3xl mb-2 sm:mb-7 transition-colors duration-2s"
                 >
                   Stellar-burger
                 </h3>
                 <p
-                  class="dark:text-purple-100 xl:text-xl max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
+                  class="dark:text-purple-100 text-sm sm:text-xl max-w-[99%] sm:max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
                 >
                   Classic student work. With the interactive constructor, simply
                   grab and drag ingredients to create the burger of your dream.
@@ -282,12 +282,12 @@
             >
               <div>
                 <h3
-                  class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                  class="font-bold dark:text-purple-100 text-xl sm:text-3xl mb-2 sm:mb-7 transition-colors duration-2s"
                 >
                   Pet-project Hedwig
                 </h3>
                 <p
-                  class="dark:text-purple-100 xl:text-xl max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
+                  class="dark:text-purple-100 text-sm sm:text-xl max-w-[99%] sm:max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
                 >
                   Pet-project of a simple messenger. Here you can find a friend
                   and chat with him (the only condition is to tell him about
@@ -382,12 +382,12 @@
             >
               <div>
                 <h3
-                  class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                  class="font-bold dark:text-purple-100 text-xl sm:text-3xl mb-2 sm:mb-7 transition-colors duration-2s"
                 >
                   Kupi-podari
                 </h3>
                 <p
-                  class="dark:text-purple-100 xl:text-xl max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
+                  class="dark:text-purple-100 text-sm sm:text-xl max-w-[99%] sm:max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
                 >
                   Wishlist service. After registration, you can create your own
                   gift selections. Do you want a new gadget, fashionable
@@ -550,12 +550,12 @@
             >
               <div>
                 <h3
-                  class="font-bold dark:text-purple-100 text-3xl mb-7 transition-colors duration-2s"
+                  class="font-bold dark:text-purple-100 text-xl sm:text-3xl mb-2 sm:mb-7 transition-colors duration-2s"
                 >
                   Mesto
                 </h3>
                 <p
-                  class="dark:text-purple-100 xl:text-xl max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
+                  class="dark:text-purple-100 text-sm sm:text-xl max-w-[99%] sm:max-w-[80%] lg:max-w-96 mb-3 transition-colors duration-2s"
                 >
                   First layout work using flex and grid. An interactive page
                   with the ability to add picture cards. Each card can be liked
@@ -638,9 +638,9 @@
     </main>
 
     <footer>
-      <section id="contacts" class="contacts">
+      <section id="contacts" class="contacts pl-2 pr-2 sm:pl-0 sm:pr-0">
         <div class="flex justify-around pb-4 sm:pb-20 xl:gap-96 lg:gap-2">
-          <div class="flex flex-col sm:flex sm:flex-row gap-10">
+          <div class="flex flex-col sm:flex sm:flex-row gap-3 sm:gap-10">
             <p
               class="font-thin text-base md:text-xl dark:text-purple-100 transition-colors duration-2s"
             >
@@ -652,7 +652,7 @@
               2024
             </p>
           </div>
-          <div class="flex flex-col sm:flex sm:flex-row gap-5">
+          <div class="flex flex-col sm:flex sm:flex-row gap-2 sm:gap-5">
             <a
               href="https://github.com/Mishe4ka14"
               class="header__link relative group dark:text-purple-100 font-thin text-base md:text-xl transition-colors duration-2s"

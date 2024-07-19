@@ -64,6 +64,13 @@
   user-select: none;
 }
 
+@media (max-width: 640px) {
+  .itcss__btn {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .itcss__btn_hide {
   display: none;
 }

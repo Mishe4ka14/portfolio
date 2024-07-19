@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "#slider-burger",
     "#slider-pet",
     "#slider-kupi-podari",
-    "#slider-mesto",
+    // "#slider-mesto",
   ];
   sliders.forEach(initializeSlider);
 });
